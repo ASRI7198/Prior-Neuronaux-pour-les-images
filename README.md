@@ -1,25 +1,31 @@
-# Description du Projet
+# TP - Priors Neuronaux pour les Images
 
-Ce projet est développé en Python en utilisant plusieurs librairies pour assurer l'entraînement, la visualisation et la gestion des données.
 
-## Librairies et Logiciels
-
-Voici les principales librairies utilisées dans ce projet :
-
-- **Numpy** : Pour les calculs numériques.
-- **Matplotlib** : Pour visualiser l’évolution des fonctions de coût et des résultats.
-- **PyTorch** : Pour la modélisation et l'entraînement des réseaux neuronaux.
-- **PIL (Pillow)** : Pour la lecture et la sauvegarde des images.
-
-## Environnement Conda
-
-L'environnement de développement est configuré via Conda à l'aide du fichier `tp_ml.yml`. Ce fichier contient toutes les dépendances nécessaires pour reproduire l'environnement utilisé.
+Ce TP explore l'utilisation des priors neuronaux pour résoudre des problèmes de reconstruction, d'inpainting et de débruitage d'images en s'appuyant sur un réseau de type encodeur-décodeur.
 
 ---
 
-### Instructions pour l'installation de l'environnement
+## Objectifs du TP
 
-1. Assurez-vous d'avoir Conda installé sur votre machine.
-2. Créez l'environnement en utilisant le fichier fourni :
+1. Construire un réseau neuronal pour reconstruire des images à partir de bruit.  
+2. Utiliser ce réseau pour effectuer de l'inpainting (compléter des zones manquantes).  
+3. Exploiter les priors neuronaux pour débruiter des images corrompues par du bruit gaussien.
+
+---
+
+## Librairies et Logiciels
+
+La programmation est réalisée en Python à l'aide des librairies suivantes :
+
+- **Numpy** : Calculs numériques.
+- **Matplotlib** : Visualisation de l'évolution des fonctions de coût et des résultats.
+- **PyTorch** : Modélisation et entraînement des réseaux neuronaux.
+- **PIL (Pillow)** : Lecture et sauvegarde des images.
+
+Un environnement Conda, défini par le fichier `tp_ml.yml`, est fourni sur la page du cours pour configurer toutes les dépendances nécessaires.
+
+### Installation de l'environnement Conda
+
+1. Créez l'environnement en exécutant :
    ```bash
    conda env create -f tp_ml.yml
